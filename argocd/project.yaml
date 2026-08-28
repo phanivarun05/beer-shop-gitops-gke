@@ -7,7 +7,7 @@ spec:
   description: Beer Shop GitOps project
 
   sourceRepos:
-    - https://github.com/phanivarun05/beer-shop-devops-gke.git
+    - https://github.com/phanivarun05/beer-shop-gitops-gke.git
 
   destinations:
     - namespace: beer-shop
