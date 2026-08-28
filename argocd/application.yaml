@@ -1,0 +1,30 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+
+metadata:
+  name: beer-shop
+  namespace: argocd
+
+spec:
+  project: beer-shop
+
+  source:
+    repoURL: https://github.com/phanivarun05/beer-shop-devops-gke.git
+    targetRevision: main
+    path: helm/beer-shop
+
+    helm:
+      valueFiles:
+        - values-dev.yaml
+
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: beer-shop
+
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+
+    syncOptions:
+      - CreateNamespace=true

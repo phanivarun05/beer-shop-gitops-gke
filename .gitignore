@@ -1,0 +1,19 @@
+# Terraform
+**/.terraform/
+*.tfstate
+*.tfstate.*
+*.tfplan
+
+# Terraform variable files may contain secrets.
+# Commit only sanitized/example tfvars files.
+*.tfvars
+!*.tfvars.example
+
+# OS/editor files
+.DS_Store
+*.swp
+*.swo
+*~
+
+# Terraform generated plan
+**/tf.plan

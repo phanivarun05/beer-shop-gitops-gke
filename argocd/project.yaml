@@ -1,0 +1,34 @@
+apiVersion: argoproj.io/v1alpha1
+kind: AppProject
+metadata:
+  name: beer-shop
+  namespace: argocd
+spec:
+  description: Beer Shop GitOps project
+
+  sourceRepos:
+    - https://github.com/phanivarun05/beer-shop-devops-gke.git
+
+  destinations:
+    - namespace: beer-shop
+      server: https://kubernetes.default.svc
+
+  clusterResourceWhitelist:
+    - group: ""
+      kind: Namespace
+
+  namespaceResourceWhitelist:
+    - group: ""
+      kind: ConfigMap
+    - group: ""
+      kind: Secret
+    - group: ""
+      kind: Service
+    - group: ""
+      kind: PersistentVolumeClaim
+    - group: apps
+      kind: Deployment
+    - group: ""
+      kind: Pod
+    - group: "apps"
+      kind: ReplicaSet
