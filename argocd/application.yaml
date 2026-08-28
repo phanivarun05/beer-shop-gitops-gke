@@ -9,7 +9,7 @@ spec:
   project: beer-shop
 
   source:
-    repoURL: https://github.com/phanivarun05/beer-shop-devops-gke.git
+    repoURL: https://github.com/phanivarun05/beer-shop-gitops-gke.git
     targetRevision: main
     path: helm/beer-shop
 
