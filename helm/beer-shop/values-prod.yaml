@@ -50,7 +50,7 @@ catalog:
   replicaCount: 3
   
   image:
-    tag: "sha-d2d3186"
+    tag: "sha-f7204ad"
 
   resources:
     requests:
@@ -75,7 +75,7 @@ user:
   replicaCount: 3
   
   image:
-    tag: "sha-d2d3186"
+    tag: "sha-f7204ad"
 
   resources:
     requests:
@@ -100,7 +100,7 @@ payment:
   replicaCount: 3
   
   image:
-    tag: "sha-d2d3186"
+    tag: "sha-f7204ad"
 
   resources:
     requests:
@@ -126,7 +126,7 @@ order:
   replicaCount: 3
   
   image:
-    tag: "sha-d2d3186"
+    tag: "sha-f7204ad"
 
   resources:
     requests:
@@ -151,7 +151,7 @@ shipping:
   replicaCount: 2
   
   image:
-    tag: "sha-d2d3186"
+    tag: "sha-f7204ad"
 
   resources:
     requests:
@@ -176,7 +176,7 @@ courier:
   replicaCount: 2
   
   image:
-    tag: "sha-d2d3186"
+    tag: "sha-f7204ad"
 
   resources:
     requests:
@@ -201,7 +201,7 @@ cart:
   replicaCount: 3
   
   image:
-    tag: "sha-d2d3186"
+    tag: "sha-f7204ad"
 
   resources:
     requests:
@@ -226,7 +226,7 @@ shop-interface:
   replicaCount: 3
   
   image:
-    tag: "sha-d2d3186"
+    tag: "sha-f7204ad"
 
   resources:
     requests:
@@ -251,7 +251,7 @@ shop-admin:
   replicaCount: 2
   
   image:
-    tag: "sha-d2d3186"
+    tag: "sha-f7204ad"
 
   resources:
     requests:
@@ -280,14 +280,14 @@ web-shop:
   replicaCount: 3
 
   image:
-    tag: "sha-d2d3186"
+    tag: "sha-f7204ad"
 
 web-admin:
   enabled: true
   replicaCount: 2
 
   image:
-    tag: "sha-d2d3186"
+    tag: "sha-f7204ad"
     
 # ==========================================================
 # Ingress
